@@ -15,10 +15,10 @@ export class AppController {
   @Get("/teste")
   getJwt(){
     
-    var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
+    var token = jwt.sign('viptech', "4Fee5", {expiresIn: "3h"});
     return console.log(token)
     }
-    
+   
 
   
 }
